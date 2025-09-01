@@ -17,15 +17,39 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--kleur01:#F96400;
+	--kleur02:#04A732;
+	--kleur03:#FFD200;
 }
 
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto; 
+}
+.oranje {
+background-color: var(--kleur01);
+}
 
+.groen {
+background-color: var(--kleur02);
+}
 
+.geel {
+	background-color: var(--kleur03);
+}
 
+.driekolom{
+	display: flex;
+}
+
+.driekolom div {
+width: 33%;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
+/* boven header */
 
-/* jouw code */
 
