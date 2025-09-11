@@ -5,6 +5,32 @@
   box-sizing:border-box;  
 }
 
+/* All Together Serif - Condensed Bold */
+@font-face {
+  font-family: 'AllTogetherSerif';
+  src: url('38b3690728e874ad-s.p.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* All Together Serif - Condensed Light */
+@font-face {
+  font-family: 'AllTogetherSerif';
+  src: url('ae5161758a79d99d-s.p.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* All Together Serif - Wide Black */
+@font-face {
+  font-family: 'AllTogetherSerif';
+  src: url('c0244a0ee0d72b84-s.p.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 
@@ -15,41 +41,22 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-	--kleur01:#F96400;
-	--kleur02:#04A732;
-	--kleur03:#FFD200;
+	--textkleur:#5A1F06;
+	--wit:#eee;
+	--roze:#FFABDE;
+	--groen:#DBE84E;
+	--geel:#FFD200;
+	--lichtgeel:#FFF1B6;
 }
 
-.container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto; 
-}
-.oranje {
-background-color: var(--kleur01);
-}
-
-.groen {
-background-color: var(--kleur02);
-}
-
-.geel {
-	background-color: var(--kleur03);
-}
-
-.driekolom{
-	display: flex;
-}
-
-.driekolom div {
-width: 33%;
-}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 /* boven header */
 
-
+h2{
+  font-family: 'AllTogetherSerif', serif;
+  font-weight: 700; /* Bold */
+  color: var(--textkleur);
+}
