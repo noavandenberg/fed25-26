@@ -8,7 +8,7 @@
 /* All Together Serif - Condensed Bold */
 @font-face {
   font-family: 'AllTogetherSerif';
-  src: url('38b3690728e874ad-s.p.woff2') format('woff2');
+  src: url('../fonts/a79c960601d70c71-s.p.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 /* All Together Serif - Condensed Light */
 @font-face {
   font-family: 'AllTogetherSerif';
-  src: url('ae5161758a79d99d-s.p.woff2') format('woff2');
+  src: url('../fonts/ae5161758a79d99d-s.p.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -26,9 +26,18 @@
 /* All Together Serif - Wide Black */
 @font-face {
   font-family: 'AllTogetherSerif';
-  src: url('c0244a0ee0d72b84-s.p.woff2') format('woff2');
+  src: url('../fonts/c0244a0ee0d72b84-s.p.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AllTogetherSerif';
+  src: url('../fonts/c185bb9aea0d69e2-s.p.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
   font-display: swap;
 }
 
@@ -59,4 +68,8 @@ h2{
   font-family: 'AllTogetherSerif', serif;
   font-weight: 700; /* Bold */
   color: var(--textkleur);
+}
+
+section:nth-of-type(6) {
+
 }
