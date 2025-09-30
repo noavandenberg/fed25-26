@@ -3,6 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 /* All Together Serif - Condensed Bold */
@@ -15,13 +17,13 @@
 }
 
 /* All Together Serif - Condensed Light */
-@font-face {
-  font-family: 'AllTogetherSerif';
+/* @font-face {
+  font-family: 'AllTogetherSerif-condensed';
   src: url('../fonts/ae5161758a79d99d-s.p.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 /* All Together Serif - Wide Black */
 @font-face {
@@ -33,13 +35,29 @@
 }
 
 @font-face {
-  font-family: 'AllTogetherSerif';
+  font-family: 'AllTogetherSerif-maarnietwaar';
   src: url('../fonts/c185bb9aea0d69e2-s.p.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-stretch: condensed;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'AllTogetherSerif';
+  src: url('../fonts/38b3690728e874ad-s.p.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  src: url('../fonts/f84d7dd3a5b6897c-s.p.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+} */
 
 
 
@@ -51,6 +69,7 @@
 :root {
 	/* startje */
 	--textkleur:#5A1F06;
+  --textkleur2:#000000;
 	--wit:#eee;
 	--roze:#FFABDE;
 	--groen:#DBE84E;
@@ -58,18 +77,108 @@
 	--lichtgeel:#FFF1B6;
 }
 
+h2{
+  font-family: 'AllTogetherSerif';
+  font-weight: 300;
+  /* font-style: normal;
+  font-display: swap; */
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 /* boven header */
 
-h2{
-  font-family: 'AllTogetherSerif', serif;
-  font-weight: 700; /* Bold */
-  color: var(--textkleur);
+
+/* header */
+
+
+/* hero section */
+main > section:nth-of-type(1) {
+  background-color: var(--lichtgeel);
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
-section:nth-of-type(6) {
+span {
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  font-weight: 700;
+  /* font-style: normal; */
+  font-size: 1rem;
+  /* font-stretch: condensed;
+  font-display: swap; */
+  display: block;
+
 
 }
+
+
+/* article section */
+main > section:nth-of-type(2) {
+  background-color: var(--lichtgeel);
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+section:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+section:nth-of-type(2) img {
+  width: 100%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  border-radius: 0em 1em 1em 0em;
+  padding: 2em;
+}
+
+article:nth-of-type(1){
+  background-color:var(--roze);
+  width:90%;
+}
+
+article:nth-of-type(2){
+  background-color:var(--groen);
+  margin-left: auto; /* duwt 'm helemaal naar rechts */
+  border-radius: 1em 0em 0em 1em;
+
+}
+
+article:nth-of-type(3){
+  background-color:var(--geel);
+}
+
+article p{
+  order: -1;
+}
+
+article img:nth-of-type(1){
+  order: -2;
+}
+
+article img:nth-of-type(2){
+  order: -3;
+}
+
+
+article {
+  position: relative; 
+}
+
+article img:nth-of-type(2) {
+  position: absolute;
+  left:1rem;
+  top:-5rem;
+  width: 40%;
+}
+
+
