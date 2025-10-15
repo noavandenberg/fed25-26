@@ -126,11 +126,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | julia          | noa          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Mijn youtube   |  hoe maak ik mijn 
+                      3e sectie scrollende text
+                      hoe doe ik de img 
+                      animatie 1e sectie 
+  |  filmpje werkt |
+  |  nog niet.     |
+  |  mag mijn span?|                  | en ik dit    | en dan ik dat    |
+  |                |          | nog een punt | dit wil ik zeker |
+  |                |              | ...          | ...              |
 
 
   ### Verslag van meeting
