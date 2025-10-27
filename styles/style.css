@@ -71,13 +71,16 @@
 	--textkleur:#5A1F06;
   --textkleur2:#000000;
 	--wit:#ffffff;
+  --vieswit:#F3F6FA;
 	--roze:#FFABDE;
 	--groen:#DBE84E;
 	--geel:#FFD200;
 	--lichtgeel:#FFF1B6;
+  --mmrood:#DA1F18;
+  --mmgroen:#20B340;
 }
 
-h2{
+article h2{
   font-family: 'AllTogetherSerif';
   font-weight: 300;
   /* font-style: normal;
@@ -85,17 +88,16 @@ h2{
 }
 
 p{
-  font-family: 'AllTogetherSerif';
-  font-weight: 200;
+  font-family: 'AllTogetherSerif-maarnietwaar';
+
 }
+
 
 /****************/
 /* JOUW STYLING */
 /****************/
 /* boven header */
 
-
-/* header */
 
 
 /* hero section */
@@ -138,7 +140,8 @@ main > section:nth-of-type(1) a:nth-of-type(1){
 }
 
 main > section:nth-of-type(1) a:nth-of-type(1) img{
-width: 10%;
+width: 3.5em;
+padding-right: 1em;
 }
 
 main > section:nth-of-type(1) a:nth-of-type(2){
@@ -154,6 +157,46 @@ main > section:nth-of-type(1) a:nth-of-type(2){
   align-items: center;
 }
 
+main section:nth-of-type(1) img:nth-of-type(1){
+  width: 100%;
+  border-radius: 50%;
+}
+
+main section:nth-of-type(1) img:nth-of-type(n+2):nth-of-type(-n+6) {
+  /* border-radius: 50%;
+  background: radial-gradient(60% 60% at 39.92% 40%, rgba(46, 40, 43, 0) 58.33%, rgba(46, 40, 43, 0.08) 78.12%, rgba(46, 40, 43, 0.36) 100%); */
+  border-radius: 50%;
+  display: block;
+  width: 3em;  
+  height: 3em; 
+  object-fit: cover;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+main section:nth-of-type(1) img:nth-of-type(2){
+  background-color: var(--wit);
+  padding:0.3em;
+}
+
+main section:nth-of-type(1) img:nth-of-type(3){
+  background-color: var(--mmrood);
+    padding:0.3em;
+
+}
+
+main section:nth-of-type(1) img:nth-of-type(4){
+  background-color: var(--mmgroen);
+  padding:0.3em;
+
+}
+
+main section:nth-of-type(1) img:nth-of-type(5){
+  background-color: var(--mmgroen);
+  padding:0.3em;
+}
+
+
 /* article section */
 main > section:nth-of-type(2) {
   background-color: var(--lichtgeel);
@@ -161,7 +204,7 @@ main > section:nth-of-type(2) {
   padding-bottom: 6em;
 }
 
-section:nth-of-type(2){
+main section:nth-of-type(2){
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -209,7 +252,6 @@ article img:nth-of-type(2){
   order: -3;
 }
 
-
 article {
   position: relative; 
 }
@@ -228,14 +270,61 @@ main > section:nth-of-type(3){
   padding-bottom: 6em;
 }
 
+main > section:nth-of-type(3) ul:first-of-type {
+  font-family: 'AllTogetherSerif-condensed';
+  font-size: x-large;
+  display: flex;
+  gap: 0.5em;
+  list-style: none;
+  white-space: nowrap;
+  animation-name: scrolly-tekst;
+  animation-timing-function: linear;
+  animation-timeline: view();
+}
+
+@keyframes scrolly-tekst {
+  0% {
+  }
+  100% {
+    translate: -100%;
+  }
+}
+
+main > section:nth-of-type(3) ul:last-of-type {
+  font-family: 'AllTogetherSerif-condensed';
+  font-size: x-large;
+  display: flex;
+  gap: 0.5em;
+  list-style: none;
+  white-space: nowrap;
+  animation-name: scrolly-tekst2;
+  animation-timing-function: linear;
+  animation-timeline: view();
+}
+
+@keyframes scrolly-tekst2 {
+  0% { 
+    transform: translateX(-100%); 
+  }
+  100% {
+     transform: translateX(0); 
+    }
+}
+
+main section:nth-of-type(3) ul li:nth-child(2n) {
+  /* font-family: 'AllTogetherSerif'; */
+  font-family: 'AllTogetherSerif';
+  font-size:smaller ;
+  padding-top: 0.2em;
+  color: var(--mmrood);
+}
+
 
 /* ons doel sectie */
 main > section:nth-of-type(4){
-  background-color: var(--geel);
-  padding-top:6em;
-  padding-bottom: 6em;
-  padding-left: 2em;
-  padding-right: 2em;
+  background: radial-gradient(circle at center bottom, var(--geel) 90%, transparent 61%) no-repeat;
+  background-color: var(--lichtgeel);
+  padding:6em 2em;
 }
 
 
@@ -283,14 +372,222 @@ footer > section:nth-of-type(1){
   flex-direction: column;
 }
 
-footer > section:nth-of-type(1) img:nth-of-type(1){
-  order: -3;
+footer{
+  background-color: var(--vieswit);
 }
 
-footer > section:nth-of-type(1) img:nth-of-type(2){
-  order: -2;
+footer section{
+  padding: 1.5em;
 }
 
-footer > section:nth-of-type(1) img:nth-of-type(3){
-  order: -1;
+footer p{
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  font-size: x-small;
 }
+
+footer > img:nth-of-type(1){
+  width: 25em;
+  background:
+    radial-gradient(circle at center top, var(--geel) 60%, var(--vieswit)) no-repeat;
+  background-position: bottom center;
+  background-size: 20em 20em; /* pas dit aan voor hoe diep de boog moet zijn */
+}
+
+
+footer section:nth-of-type(1) h2 {
+  font-family: 'AllTogetherSerif';
+  font-size: medium;
+}
+
+footer section:nth-of-type(1) ul li {
+  display: grid;
+  grid-template-columns:5em 1fr ;
+  grid-template-rows: min-content min-content min-content;
+  /* font-size: 12px; */
+  padding-bottom: 1em;;
+  padding-left: 0;
+  width: 20em;
+}
+ 
+footer section:nth-of-type(1) ul li img {
+  grid-column: 1;
+  grid-row: 1/-1;
+  /* width: 10em; */
+  /* padding: 0.5em 0.5em 0 0; */
+}
+ 
+footer section:nth-of-type(1) ul li h3 {
+  grid-column: 2;
+}
+ 
+footer section:nth-of-type(1) ul li a {
+  grid-row: 3;
+  grid-column: 2;
+  padding: 0.7em 0 1em 0.7em;
+}
+
+/* footer section:nth-of-type(1){
+  background-color: var(--geel);
+} */
+
+footer section:nth-of-type(1) ul li img{
+  width: 4em;
+}
+
+footer section:nth-of-type(2){
+  display: grid;
+  gap: 1em;
+}
+
+footer section:nth-of-type(2) h2{
+  color: var(--textkleur);
+  font-family: 'AllTogetherSerif';
+  font-weight: 300;
+}
+
+footer input{
+  border: transparent;
+  border-bottom: 0.1em solid var(--textkleur2);
+  background: none;
+  width: 100%;
+  padding:1em 0em;
+}
+
+footer section:nth-of-type(2) p{
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  font-size: x-small;
+}
+
+footer section:nth-of-type(2) a{
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  font-size: x-small;
+  color: var(--textkleur);
+  font-weight: bold;
+}
+
+form{
+  gap: 1em;
+  display: grid;
+}
+
+footer button {
+  font-family: 'AllTogetherSerif';
+  color: var(--textkleur);
+  background-color: var(--geel);
+  border: transparent;
+  border-radius: 999rem;
+  padding: 1.5em;
+  text-align: center;
+}
+
+footer section:nth-of-type(n+3):nth-of-type(-n+5) h2 {
+  font-family: 'AllTogetherSerif';
+  font-size: small;
+  color: var(--textkleur);
+  margin-bottom: 1em;
+}
+
+
+footer section:nth-of-type(n+3):nth-of-type(-n+5) li {
+  list-style: none;
+}
+
+footer section:nth-of-type(n+3):nth-of-type(-n+5) a {
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  font-size: small;
+  text-decoration: none;
+  color: var(--textkleur2);
+}
+
+footer section:nth-of-type(n+3):nth-of-type(-n+5) a:hover {
+  text-decoration: underline;
+  text-underline-offset:0.3em;
+  text-decoration-color: var(--geel);
+}
+
+footer section:nth-of-type(n+2):nth-of-type(-n+4) ul {
+  display: grid;
+  gap: 0.5em;
+}
+
+footer section:nth-of-type(5) ul {
+  display:flex;
+  gap:1em;
+}
+
+footer section:nth-of-type(5) svg{
+  fill:var(--textkleur);
+  width: 1em;
+}
+
+footer section:nth-of-type(6){
+  display: grid;
+  gap: 1em;
+}
+
+footer section:nth-of-type(6) img{
+  fill:var(--textkleur);
+  width: 6em;
+}
+
+footer section:nth-of-type(6) li{
+list-style: none;
+}
+
+footer section:nth-of-type(6) a{
+  font-family: 'AllTogetherSerif-maarnietwaar';
+  font-size: small;
+  color: var(--textkleur2);
+  text-underline-offset:0.3em;
+  text-decoration-thickness: 0.05em;
+}
+
+footer section:nth-of-type(6) a:hover{
+
+  text-decoration:none;
+}
+
+footer section:nth-of-type(6) ul{
+  display: grid;
+  gap: 0.8em;
+}
+
+footer section:nth-of-type(6) p{
+  width:25em;
+  
+}
+
+
+
+
+
+
+
+
+/* bron:https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+/* footer fullscreen grid */
+/* .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 4; }
+.div2 { grid-area: 2 / 1 / 4 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 2 / 3 / 3 / 4; }
+.div5 { grid-area: 3 / 2 / 4 / 3; }
+.div6 { grid-area: 4 / 1 / 5 / 4; }  */
