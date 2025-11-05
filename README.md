@@ -87,26 +87,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik heb 1 sectie met foto's die ik gewoon niet voor elkaar krijg, tip van sanne dat ik dat met display grid kan doe, footer en header zijn op gang gekomen!
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Joost 
+- kijken naar de vormgeving van mijn header en footer.
+- een gradient toevoegen op mijn images waardoor de tekst beter te lezen is.
+- een responsive carousel maken
+ 
+Julia 
+- youtube filmpje
+- moet mijn hele footer uitgewerkt
+
+Melissa
+- checken of mijn HTML juist is en wat ik kan verbeteren. 
+- als er tijd is, kijkje naar hoe ik css zou moeten uitwerken
+
+Noa (ik)
+- tekst naar rechts en links schuiven responsive
+- html even goed zien of het klopt
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- niet echt kunnen kijken naar het links rechts schuiven van de tekst
+- HTML zag er goed uit werd goedgekeurd
+
 
 </details>
 
@@ -120,32 +130,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik wou graag mijn onscroll voor elkaar krijgen
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | julia          | noa          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | Mijn youtube   |  hoe maak ik mijn 
-                      3e sectie scrollende text
-                      hoe doe ik de img 
-                      animatie 1e sectie 
-  |  filmpje werkt |
-  |  nog niet.     |
-  |  mag mijn span?|                  | en ik dit    | en dan ik dat    |
-  |                |          | nog een punt | dit wil ik zeker |
-  |                |              | ...          | ...              |
+randi
+- achtergrond video toegankelijk
+- vraag over de header
+- text aanpassen met css
+
+julia
+- Mijn youtube filmpje werkt nog niet. Mag mijn span?
+
+melissa
+- hoe maak ik carousel met 3 plaatjes in een grid layout -hoe doe ik aan en uit button op een filmpje - hoe maak ik header transparent - hoe doe ik advertentie in header maar uit de flex layout
+
+joaquim
+- hoe maak je een scrollbar met filmpjes erin
+
+noa (ik)
+- hoe maak ik mijn 3e sectie scrollende text
+- hoe doe ik de img animatie 1e sectie
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - ik ga in de les verder met onscroll in css
+  - hover effect met tekst verschuiven weet ik nu
+  - mijn css ziet er goed uit en gaat goed
+  - iedereen kon elkaar verder helpen over dezelfde vragen
 
 </details>
 
@@ -179,14 +195,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Joost     | Julia      | Noa    | student 4        |
-  |- kijken naar de vormgeving 
-   van mijn header en footer.
-  |- een gradient toevoegen op mijn images waardoor de tekst beter te lezen is.
-  | - een responsive carousel maken | ---                | ---          | ---              |
-  |  | en dit             | en ik dit    | en dan ik dat    |
-  |  | dit als er tijd is | nog een punt | dit wil ik zeker |
-  |  | ...                | ...          | ...              |
+Julia
+- plaatje in mn footer naast de tekst
+- lettertype in mn select aanpassen
+
 
 
   ### Verslag van meeting

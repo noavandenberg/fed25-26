@@ -1,0 +1,646 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* All Together Serif - Condensed Bold */
+@font-face {
+  font-family: "AllTogetherSerif";
+  src: url("../fonts/a79c960601d70c71-s.p.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* All Together Serif - Condensed Light */
+@font-face {
+  font-family: "AllTogetherSerif-condensed";
+  src: url("../fonts/ae5161758a79d99d-s.p.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* All Together Serif - Wide Black  */
+@font-face {
+  font-family: "AllTogetherSerif";
+  src: url("../fonts/c0244a0ee0d72b84-s.p.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  src: url("../fonts/c185bb9aea0d69e2-s.p.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AllTogetherSerif";
+  src: url("../fonts/38b3690728e874ad-s.p.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  src: url("../fonts/f84d7dd3a5b6897c-s.p.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  /* startje */
+  --textkleur: #5a1f06;
+  --textkleur2: #000000;
+  --wit: #ffffff;
+  --grijze-border:#b9c1ca;
+  --vieswit: #f3f6fa;
+  --roze: #ffabde;
+  --groen: #dbe84e;
+  --geel: #ffd200;
+  --lichtgeel: #fff1b6;
+  --mmrood: #da1f18;
+  --mmgroen: #20b340;
+}
+
+article h2 {
+  font-family: "AllTogetherSerif";
+  font-weight: 300;
+  /* font-style: normal;
+  font-display: swap; */
+}
+
+p {
+  font-family: "AllTogetherSerif-maarnietwaar";
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+/* boven header */
+/*************/
+/* DE HEADER */
+/*************/
+header {
+  /* JOUW CODE HIER - stap 3 */
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  background-color: var(--wit);
+  z-index: 100;
+}
+
+header img{
+  width:1em;
+}
+
+header svg:nth-of-type(1){
+  fill: var(--textkleur);
+}
+
+/* sluit button */
+nav svg{
+  fill: var(--textkleur);
+
+  width: 2.5em;
+  height: auto;
+}
+
+/***************/
+/* MENU BUTTON */
+/***************/
+header > button {
+  /* JOUW CODE HIER - stap 3 */
+  order:-1;
+}
+
+header li{
+  list-style: none;
+}
+
+/************/
+/* HET MENU */
+/************/
+header nav {
+  /* stap 1 */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto; /* zorgt dat de rechterkant niet het hele scherm bedekt */
+  
+  width: 70%; /* de gewenste breedte */
+  
+  /* stap 2 */
+  translate: -100%;
+  
+  /* stap 4 */
+  transition: 1s;
+  
+  background-color: var(--wit);
+}
+
+header a{
+  color:var(--textkleur);
+}
+
+
+/* als menu open is */
+nav.is-open{
+  /* JOUW CODE HIER - stap 4 */
+    translate:0%;
+    padding: 1em;
+}
+
+nav li a{
+  text-decoration: none;
+  font-family: "AllTogetherSerif";
+  color: var(--textkleur);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em ;
+
+}
+
+  header button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  header nav ul li a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding:1.5em 1.5em 1.5em 0;
+    font-family: "AllTogetherSerif";
+    color: var(--textkleur);
+  }
+
+  header > a:last-of-type svg{
+    fill:var(--textkleur);
+  }
+
+  header > button svg{
+    fill:var(--textkleur);
+      color: #333;
+  transition: color 0.2s;
+  }
+
+  
+
+/* button:hover svg, a:hover svg {
+  color: #007bff;
+} */
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+@media (min-width:60em) {
+  header > button {
+    /* JOUW CODE HIER - stap 6 */
+    display:none;    
+  }
+  
+  header nav {
+    /* JOUW CODE HIER - stap 7 */
+    position:static;
+    translate:0;
+    background:none;
+  }
+  
+  nav button {
+    /* JOUW CODE HIER - stap 6 */
+    display:none;
+    
+  }
+  
+  nav ul {
+    /* JOUW CODE HIER - stap 8 */
+    display:flex;
+    gap:1em;
+    
+  }
+  
+  nav li a {
+    /* JOUW CODE HIER - stap 9 */
+    border:none;
+    flex-direction:column;
+  }
+  
+  header > a:last-of-type {
+    /* JOUW CODE HIER - stap 9 */
+        flex-direction:column;
+
+    
+  }
+}
+
+header nav img{
+  width:3em;
+}
+
+nav > a{
+  display: block;
+
+  border-radius: 0.5em;
+  border: 0.125rem solid var(--textkleur);
+
+  background-color: var(--vieswit);
+
+  margin-bottom: 1em;
+  padding: 1.2em;
+
+  font-family: "AllTogetherSerif";
+  font-weight: 700;
+  font-size: smaller;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+
+
+nav > a:hover{
+  background-color: var(--textkleur);
+  color: var(--wit);
+}
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:57em) {
+  header > a:first-of-type {
+    width: 5em;
+  }
+
+  header a{
+    gap: 0;
+  }
+
+  header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > a:last-of-type,
+  nav a {
+    /* JOUW CODE HIER - stap 10 */
+    flex-direction:row;
+  }
+
+  nav ul{
+    gap: 0;
+  }
+
+  nav ul li a{
+    font-size: 0.8em;
+  }
+
+  nav > a{
+  border-radius: 999em;
+  padding:1em;
+  margin: 0;
+}
+}
+
+
+/* footer */
+/* https://cssgrid-generator.netlify.app/ */
+footer {
+  background-color: var(--vieswit);
+}
+
+@media (min-width: 60em) {
+  footer {
+   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+  padding: 1em 5em;
+  }
+}
+
+footer section {
+  padding: 1.5em;
+}
+
+footer p {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  font-size: x-small;
+}
+
+/* de grote foto */
+footer > img:nth-of-type(1) {
+  width: 25em;
+  background: radial-gradient(
+      circle at center top,
+      var(--geel) 60%,
+      var(--vieswit)
+    )
+    no-repeat;
+  background-position: bottom center;
+  background-size: 20em 20em;
+  overflow: clip; /* pas dit aan voor hoe diep de boog moet zijn */
+}
+
+@media (min-width: 75em) {
+  footer > img:nth-of-type(1) {
+   grid-area: 1 / 1 / 2 / 5;
+    width: 100%;             
+    max-width: 50em;        /* voorkomt dat hij gigantisch wordt */
+    margin: 0 auto;         /* center blijft belangrijk */
+  }
+}
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(1) {
+   grid-area: 2 / 1 / 3 / 5;
+  }
+}
+
+footer section:nth-of-type(1) ul {
+  display: grid;border-bottom: .1em solid var(--grijze-border);    
+}
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(1) ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+footer section:nth-of-type(1) h2 {
+  font-family: "AllTogetherSerif";
+  font-size: medium;
+}
+
+footer section:nth-of-type(1) ul li {
+  display: grid;
+  grid-template-columns: 5em 1fr;
+  grid-template-rows: min-content min-content min-content;
+  /* font-size: 12px; */
+  padding-bottom: 1em;
+  padding-left: 0;
+  width: 9em;
+}
+
+@media (min-width: 75em) {
+ footer section:nth-of-type(1) ul li {
+  width: 25%;
+ }
+}
+
+
+footer section:nth-of-type(1) ul li img {
+  grid-column: 1;
+  grid-row: 1/-1;
+  /* width: 10em; */
+  /* padding: 0.5em 0.5em 0 0; */
+}
+
+footer section:nth-of-type(1) ul li h3 {
+  grid-column: 2;
+}
+
+footer section:nth-of-type(1) ul li a {
+  grid-row: 3;
+  grid-column: 2;
+  padding: 0.7em 0 1em 0.7em;
+}
+
+footer section:nth-of-type(1) ul li img {
+  width: 4em;
+}
+
+footer section:nth-of-type(2) {
+  display: grid;
+  gap: 1em;
+}
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(2) {
+   grid-area: 3 / 1 / 5 / 2;
+  }
+}
+
+footer section:nth-of-type(2) h2 {
+  color: var(--textkleur);
+  font-family: "AllTogetherSerif";
+  font-weight: 300;
+}
+
+footer input {
+  border: transparent;
+  border-bottom: 0.1em solid var(--textkleur2);
+  background: none;
+  width: 100%;
+  padding: 1em 0em;
+}
+
+footer section:nth-of-type(2) p {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  font-size: xx-small;
+}
+
+footer section:nth-of-type(2) a {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  font-size: x-small;
+  color: var(--textkleur);
+  font-weight: bold;
+}
+
+form {
+  gap: 1em;
+  display: grid;
+}
+
+footer button {
+  font-family: "AllTogetherSerif";
+  color: var(--textkleur);
+  background-color: var(--geel);
+  border: transparent;
+  border-radius: 999rem;
+  padding: 1.5em;
+  text-align: center;
+}
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(3) {
+   grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+footer section:nth-of-type(n + 3):nth-of-type(-n + 5) h2 {
+  font-family: "AllTogetherSerif";
+  font-size: small;
+  color: var(--textkleur);
+  margin-bottom: 1em;
+}
+
+footer section:nth-of-type(n + 3):nth-of-type(-n + 5) li {
+  list-style: none;
+}
+
+footer section:nth-of-type(n + 3):nth-of-type(-n + 5) a {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  font-size: x-small;
+  text-decoration: none;
+  color: var(--textkleur2);
+}
+
+footer section:nth-of-type(n + 3):nth-of-type(-n + 5) a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-color: var(--geel);
+}
+
+footer section:nth-of-type(n + 2):nth-of-type(-n + 4) ul {
+  display: grid;
+  gap: 0.5em;
+}
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(4) {
+   grid-area: 3 / 3 / 4 / 4;
+  }
+}
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(5) {
+  grid-area: 3 / 4 / 4 / 5;  }
+}
+
+
+footer section:nth-of-type(5) ul {
+  display: flex;
+  gap: 1em;
+}
+
+footer section:nth-of-type(5) svg {
+  fill: var(--textkleur);
+  width: 1em;
+}
+
+/* Footer Section 6 */
+footer section:nth-of-type(6) {
+  display: grid;
+  gap: 1em;
+}
+
+/* Links en lijstjes */
+footer section:nth-of-type(6) ul {
+  display: grid;
+  gap: 0.8em; /* kleine ruimte tussen links voor mobiel */
+}
+
+footer section:nth-of-type(6) li {
+  list-style: none;
+}
+
+footer section:nth-of-type(6) a {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  font-size: x-small;
+  color: var(--textkleur2);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 0.05em;
+  padding: 0.2em 0; /* iets klikbare hoogte */
+}
+
+footer section:nth-of-type(6) a:hover {
+  text-decoration: none;
+}
+
+/* Grote schermen */
+@media (min-width: 75em) {
+  footer section:nth-of-type(6) {
+    grid-area: 5 / 1 / 6 / 5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  footer section:nth-of-type(6) ul {
+    display: flex;
+    flex-wrap: wrap; /* laat links doorlopen naar nieuwe regel */
+    gap: 0.5em;
+  }
+
+  /* Laat de laatste link op een nieuwe regel */
+  footer section:nth-of-type(6) ul li:last-child {
+    flex-basis: 100%; /* volledige breedte van de rij */
+  }
+
+  footer section:nth-of-type(6) p {
+    width: 50em;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+footer section:nth-of-type(6) img {
+  fill: var(--textkleur);
+  width: 6em;
+}
+
+
+@media (min-width: 75em) {
+  footer section:nth-of-type(6) ul{
+   display: flex;
+  }
+}
+
+footer section:nth-of-type(6) p {
+  width: 25em;
+}
+
+@media (min-width: 75em) {
+
+footer section:nth-of-type(6) p {
+  width: 50em;
+  grid-area: 2 / 2 / 3 / 3;
+}
+}
+
+/* bron:https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
