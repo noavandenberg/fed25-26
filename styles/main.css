@@ -86,6 +86,7 @@ img {
   --lichtgeel: #fff1b6;
   --mmrood: #da1f18;
   --mmgroen: #20b340;
+  --groenalgemeen: #015E20;
 }
 
 article h2 {
@@ -363,16 +364,20 @@ footer p {
 
 /* de grote foto */
 footer > img:nth-of-type(1) {
-  width: 25em;
+
   background: radial-gradient(
-      circle at center top,
+      circle at center bottom,
+      var(--geel) 0%,
       var(--geel) 60%,
-      var(--vieswit)
+      transparent 61%
     )
+    no-repeat;
+  background-size: 100% 100%
     no-repeat;
   background-position: bottom center;
   background-size: 20em 20em;
-  overflow: clip; /* pas dit aan voor hoe diep de boog moet zijn */
+  overflow: clip; 
+  /* chatgpt heeft me verder geholpen met de boog goed krijgen */
 }
 
 @media (min-width: 75em) {
