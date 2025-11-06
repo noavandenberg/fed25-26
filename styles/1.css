@@ -452,22 +452,38 @@ section:nth-of-type(5) ul {
   display: flex;
   grid-area: 4 / 1 / 5 / 2;
   list-style: none;
+  text-align: center;
+
 }
 
 section:nth-of-type(5) li {
   display: grid;
   gap: 1em;
+  justify-content: center;
 }
+
+section:nth-of-type(5) h3 {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  color:var(--textkleur);
+}
+
 
 section:nth-of-type(5) ul a {
   font-family: "AllTogetherSerif-maarnietwaar";
   font-size: 0.8em;
   display: flex;
   align-items: center;
+  color: var(--textkleur);
 }
 
 section:nth-of-type(5) ul a svg {
   width: 3.5em;
+}
+
+section:nth-of-type(5) li div{
+  padding: 6em 1em;background-color: var(--roze);
+  border-radius: 50%;
+  order:-1;
 }
 
 section:nth-of-type(5) ul a:hover {
@@ -480,7 +496,7 @@ section:nth-of-type(5) ul a:hover {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  section:nth-of-type(5) div:nth-of-type(1) {
+  section:nth-of-type(5) > div:nth-of-type(1) {
     grid-area: 1 / 1 / 2 / 2;
   }
 
@@ -509,8 +525,11 @@ section:nth-of-type(5) ul a:hover {
   }
 
     section:nth-of-type(5) ul li {
-    grid-area: 2 / 1 / 3 / 4;
+    width:100%;
+    text-align: center;
   }
+
+
 }
 
 
