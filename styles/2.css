@@ -32,16 +32,48 @@ main > section:nth-of-type(1) img {
 /******************/
 /* tweede sectie */
 /******************/
+section:nth-of-type(2) {
+    padding:1em;
+}
+
+section:nth-of-type(2) ul li a h3 {
+  font-family: "AllTogetherSerif";
+  font-weight: 300;
+  color: var(--textkleur2);
+  font-size: 0.8em;
+}
 
 section:nth-of-type(2) ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap:2em;
 }
+
 section:nth-of-type(2) ul li {
   list-style: none;
 }
 
+section:nth-of-type(2) ul li:nth-of-type(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+section:nth-of-type(2) ul li:nth-of-type(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+section:nth-of-type(2) ul li:nth-of-type(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+section:nth-of-type(2) ul li:nth-of-type(4) {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
 section:nth-of-type(2) ul li a {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   text-align: center;
   gap: 1em;
@@ -51,7 +83,7 @@ section:nth-of-type(2) a img {
   order: -1;
 }
 
-section:nth-of-type(2) li:nth-of-type(1) img {
+/* section:nth-of-type(2) li:nth-of-type(1) img {
   background-color: var(--lichtblauw);
   padding: 1em;
   border-radius: 50%;
@@ -73,9 +105,30 @@ section:nth-of-type(2) li:nth-of-type(4) img {
   background-color: var(--mmgroen);
   padding: 1em;
   border-radius: 50%;
+} */
+
+section:nth-of-type(2) ul li a img {
+  order: -1;
+  width: 6em;
+  height: 6em;
+  padding: 1em;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
+/* Kleuren per item */
+section:nth-of-type(2) li:nth-of-type(1) img {
+  background-color: var(--lichtblauw);
+}
+section:nth-of-type(2) li:nth-of-type(2) img {
+  background-color: var(--donkerblauw);
+}
+section:nth-of-type(2) li:nth-of-type(3) img {
+  background-color: var(--mmrood);
+}
+section:nth-of-type(2) li:nth-of-type(4) img {
+  background-color: var(--mmgroen);
+}
 
 /******************/
 /* derde sectie */
@@ -112,12 +165,13 @@ section:nth-of-type(3) ul {
 }
 
 section:nth-of-type(3) ul li a {
-  display: grid;
-  text-decoration: none;
-  list-style: none;
-  gap: 1em;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 section:nth-of-type(3) ul li {
   list-style: none;
@@ -129,6 +183,7 @@ section:nth-of-type(3) a img {
   background-color: var(--wit);
   padding: 1em;
   border-radius: 50%;
+  width: 15em;
 }
 
 span {

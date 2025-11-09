@@ -18,7 +18,7 @@ img {
   height: auto;
 }
 
-/* All Together Serif - Condensed Bold */
+/* dikke schreefloos */
 @font-face {
   font-family: "AllTogetherSerif";
   src: url("../fonts/a79c960601d70c71-s.p.woff2") format("woff2");
@@ -27,7 +27,7 @@ img {
   font-display: swap;
 }
 
-/* All Together Serif - Condensed Light */
+/* skinny schreef */
 @font-face {
   font-family: "AllTogetherSerif-condensed";
   src: url("../fonts/ae5161758a79d99d-s.p.woff2") format("woff2");
@@ -36,7 +36,7 @@ img {
   font-display: swap;
 }
 
-/* All Together Serif - Wide Black  */
+/* dik schreefloos  */
 @font-face {
   font-family: "AllTogetherSerif";
   src: url("../fonts/c0244a0ee0d72b84-s.p.woff2") format("woff2");
@@ -45,6 +45,7 @@ img {
   font-display: swap;
 }
 
+/* skinny schreefloos */
 @font-face {
   font-family: "AllTogetherSerif-maarnietwaar";
   src: url("../fonts/c185bb9aea0d69e2-s.p.woff2") format("woff2");
@@ -62,6 +63,7 @@ img {
   font-display: swap;
 }
 
+/* dikke schreefloos */
 @font-face {
   font-family: "AllTogetherSerif-maarnietwaar";
   src: url("../fonts/f84d7dd3a5b6897c-s.p.woff2") format("woff2");
@@ -89,7 +91,6 @@ img {
   --groenalgemeen: #015E20;
   --lichtblauw: #8ACEFF;
   --donkerblauw: #121661;
-  
 }
 
 article h2 {
