@@ -1,3 +1,7 @@
+/******************/
+/* eerste sectie */
+/******************/
+
 main > section:nth-of-type(1) {
   padding: 1em;
   background-color: var(--groenalgemeen);
@@ -25,8 +29,78 @@ main > section:nth-of-type(1) img {
   width: 20em;
 }
 
+/******************/
+/* tweede sectie */
+/******************/
+
+section:nth-of-type(2) ul {
+  display: flex;
+}
+section:nth-of-type(2) ul li {
+  list-style: none;
+}
+
+section:nth-of-type(2) ul li a {
+  display: grid;
+  text-decoration: none;
+  text-align: center;
+  gap: 1em;
+}
+
+section:nth-of-type(2) a img {
+  order: -1;
+}
+
+section:nth-of-type(2) li:nth-of-type(1) img {
+  background-color: var(--lichtblauw);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+section:nth-of-type(2) li:nth-of-type(2) img {
+  background-color: var(--donkerblauw);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+section:nth-of-type(2) li:nth-of-type(3) img {
+  background-color: var(--mmrood);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+section:nth-of-type(2) li:nth-of-type(4) img {
+  background-color: var(--mmgroen);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+
+
+/******************/
+/* derde sectie */
+/******************/
+
 section:nth-of-type(3) {
   background-color: var(--vieswit);
+}
+
+section:nth-of-type(3) ul li a h3 {
+  font-family: "AllTogetherSerif";
+  color: var(--textkleur2);
+  font-size: 0.8em;
+}
+
+section:nth-of-type(3) ul li a p {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  color: var(--textkleur2);
+  font-size: 0.7em;
+}
+
+section:nth-of-type(3) ul li a span {
+  font-family: "AllTogetherSerif-maarnietwaar";
+  color: var(--grijze-border);
+  font-size: 0.9em;
 }
 
 section:nth-of-type(3) ul {
@@ -41,18 +115,13 @@ section:nth-of-type(3) ul li a {
   display: grid;
   text-decoration: none;
   list-style: none;
-    gap: 1em;
+  gap: 1em;
 }
-section:nth-of-type(3) ul li a h3 {
-  font-family: "AllTogetherSerif";
-  color: var(--textkleur2);
-  font-size: 0.8em;
-}
+
 
 section:nth-of-type(3) ul li {
   list-style: none;
   text-align: center;
-
 }
 
 section:nth-of-type(3) a img {
@@ -62,6 +131,6 @@ section:nth-of-type(3) a img {
   border-radius: 50%;
 }
 
-span{
-    display: block;
+span {
+  display: block;
 }
