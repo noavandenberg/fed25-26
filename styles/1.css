@@ -62,6 +62,7 @@ main section:nth-of-type(1) img:nth-of-type(1) {
   border-radius: 50%;
   width: 30em;
   position: absolute;
+  max-width: 100%;
 }
 
 main section:nth-of-type(1) img:nth-of-type(n + 2):nth-of-type(-n + 6) {
