@@ -11,13 +11,19 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/2.css" rel="stylesheet">
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.avif">
 </head>
 
 <body>
 
 
     <header>
+        <!-- top header -->
+        <section>
+            <p>Shop onze <a href="#">kerstcollectie!</a></p>
+        </section>
+
+
         <!-- het logo -->
         <a href="index.html">
             <svg aria-hidden="true" focusable="false" class="css-27aoa" viewBox="0 0 121 39"
@@ -31,8 +37,7 @@
         <!-- de open button -->
         <!-- de button is niet relevant voor screenreaders -->
         <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
-        <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg"
-                alt="" />Menu</button>
+        <button aria-hidden="true">≡</button>
 
 
         <!--  het menu -->
@@ -54,54 +59,71 @@
                 <li><a href="2epagina.html"><img src="images/koffer-kleur.png" alt="queen"> Bedrijfsruimte</a></li>
             </ul>
 
-            <a href="#">Ontwerp uw eigen M&M'S</a>
-            <a href="#">Mix je M&M'S Peanut</a>
-
+            <div>
+                <a href="#">
+                    <img src="images/personaliseer.png" alt="#">
+                    uw eigen M&M'S
+                </a>
+                <a href="#">
+                    <img src="images/misjemm.png" alt="#">
+                    Mix je M&M'S Peanut
+                </a>
+            </div>
         </nav>
 
         <!-- favo's link -->
-        <button>
-            <!-- Winkelmand -->
-            <svg aria-hidden="true" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                <path d="M6 6h15l-1.5 13.5H7.5L6 6zM9 6V4a3 3 0 016 0v2" />
-            </svg>
-        </button>
 
-        <button>
-            <!-- Nederlandse vlag -->
-            <svg aria-hidden="true" height="24" viewBox="0 0 24 24" width="24">
-                <rect width="24" height="8" y="0" fill="#AE1C28" />
-                <rect width="24" height="8" y="8" fill="#FFF" />
-                <rect width="24" height="8" y="16" fill="#21468B" />
-            </svg>
-        </button>
+        <ul>
+            <li> <button>
+                    <!-- Winkelmand -->
+                    <svg aria-hidden="true" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M6 6h15l-1.5 13.5H7.5L6 6zM9 6V4a3 3 0 016 0v2" />
+                    </svg>
+                </button></li>
+            <li> <button>
+                    <!-- Nederlandse vlag -->
+                    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" width="24">
+                        <rect width="24" height="8" y="0" fill="#AE1C28" />
+                        <rect width="24" height="8" y="8" fill="#FFF" />
+                        <rect width="24" height="8" y="16" fill="#21468B" />
+                    </svg>
+                </button></li>
+            <li> <a href="#">
+                    <!-- Persoon -->
+                    <svg aria-hidden="true" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+                    </svg>
+                </a></li>
+            <li> <button>
+                    <!-- Winkelmand (nog een keer) -->
+                    <svg aria-hidden="true" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M6 6h15l-1.5 13.5H7.5L6 6zM9 6V4a3 3 0 016 0v2" />
+                    </svg>
+                </button>
+            </li>
 
-        <a href="#">
-            <!-- Persoon -->
-            <svg aria-hidden="true" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                <circle cx="12" cy="8" r="4" />
-                <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
-            </svg>
-        </a>
-
-        <button>
-            <!-- Winkelmand (nog een keer) -->
-            <svg aria-hidden="true" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                <path d="M6 6h15l-1.5 13.5H7.5L6 6zM9 6V4a3 3 0 016 0v2" />
-            </svg>
-        </button>
+        </ul>
 
 
     </header>
 
     <main>
         <section>
-            <h1>
-                Onze producten bedrijf
-            </h1>
-            <p>
-                Verras klanten, trakteer werknemers of lanceer campagnes met uw eigen kleuren, logo's en foto's.
-            </p>
+            <div>
+
+                <h1>
+                    Onze producten bedrijf
+                </h1>
+                <nav aria-label="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Ons bedrijfsassortiment</span>
+                </nav>
+                <p>
+                    Verras klanten, trakteer werknemers of lanceer campagnes met uw eigen kleuren, logo's en foto's.
+                </p>
+            </div>
             <img src="images/koffer-bedrijf.png" alt="koffer m&m stijl">
         </section>
 
@@ -144,6 +166,7 @@
         </section>
 
         <section>
+            <!-- HAD MIJN FILTEROPTIES EN AANTAL ITEMS BETER IN HET GRID KUNNEN PLAATSEN -->
             <h2 class="visually-hidden">Artikelen die verkocht worden</h2>
             <ul>
                 <li>
@@ -155,7 +178,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/1e-fotozak.png" alt="#">
+                        <img src="images/hover-1.png" alt="#">
                     </a>
                 </li>
                 <li>
@@ -169,7 +195,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/2efotokerst.png" alt="#">
+                        <img src="images/hover-2.png" alt="#">
                     </a>
                 </li>
 
@@ -185,7 +214,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/3efotodoosjes.png" alt="#">
+                        <img src="images/hover-3.png" alt="#">
                     </a>
                 </li>
                 <li>
@@ -199,7 +231,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/4efotobuisjes.png" alt="#">
+                        <img src="images/hover-4.png" alt="#">
                     </a>
                 </li>
 
@@ -215,7 +250,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/5efotopunt.png" alt="#">
+                        <img src="images/hover-5.png" alt="#">
                     </a>
                 </li>
                 <li>
@@ -229,7 +267,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/6efotokleinzak.png" alt="#">
+                        <img src="images/hover-6.png" alt="#">
                     </a>
                 </li>
 
@@ -245,7 +286,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/7efotozakjes.png" alt="#">
+                        <img src="images/hover-7.png" alt="#">
                     </a>
                 </li>
                 <li>
@@ -259,7 +303,10 @@
                             <span>Excl. btw</span>
                         </p>
 
+                        <img src="images/personaliseer.png" alt="#">
+
                         <img src="images/8efoto.png" alt="#">
+                        <img src="images/hover-8.png" alt="#">
                     </a>
                 </li>
             </ul>
@@ -270,8 +317,9 @@
     </main>
 
     <footer>
-        <img src="images/footer-img.avif" alt="m&m karakters chillen samen">
-        <section>
+        <div>
+            <img src="images/footer-img.avif" alt="m&m karakters chillen samen">
+        </div>        <section>
             <ul>
                 <li>
                     <h2>

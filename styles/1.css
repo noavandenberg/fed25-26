@@ -382,6 +382,7 @@ main > section:nth-of-type(4) a {
 
 main > section:nth-of-type(4) img {
   display: inline-block;
+  max-width: 100%;
 }
 
 /* sectie 5 */
@@ -446,6 +447,7 @@ section:nth-of-type(5) div:nth-of-type(3) {
 
 section:nth-of-type(5) img {
   border-radius: 50%;
+  max-width: 100%;
 }
 
 section:nth-of-type(5) ul {

@@ -9,14 +9,14 @@
   padding: 0;
 }
 
-body {
+/* body {
   overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 /* dikke schreefloos */
 @font-face {
@@ -80,16 +80,17 @@ img {
   --textkleur: #5a1f06;
   --textkleur2: #000000;
   --wit: #ffffff;
-  --grijze-border:#b9c1ca;
+  --grijze-border: #b9c1ca;
   --vieswit: #f3f6fa;
   --roze: #ffabde;
   --groen: #dbe84e;
   --geel: #ffd200;
+  --oranje: #ed9419;
   --lichtgeel: #fff1b6;
   --mmrood: #da1f18;
   --mmgroen: #20b340;
-  --groenalgemeen: #015E20;
-  --lichtblauw: #8ACEFF;
+  --groenalgemeen: #015e20;
+  --lichtblauw: #8aceff;
   --donkerblauw: #121661;
 }
 
@@ -105,33 +106,52 @@ p {
 }
 
 /****************/
-/* JOUW STYLING */
-/****************/
 /* boven header */
+/****************/
+header section:nth-of-type(1) {
+  position: absolute; /* verplaats het binnen de header */
+  top: -100%; /* schuif het omhoog, boven de header */
+  left: 0;
+  width: 100%;
+  background-color: var(--oranje);
+  padding: 1em;
+}
+
+header section:nth-of-type(1) p {
+  font-family: "AllTogetherSerif";
+  text-align: center;
+}
+
+header section:nth-of-type(1) p a {
+  font-family: "AllTogetherSerif";
+  text-align: center;
+}
+
 /*************/
 /* DE HEADER */
 /*************/
 header {
-  /* JOUW CODE HIER - stap 3 */
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
   background-color: var(--wit);
   z-index: 100;
+  padding: 1em;
+  position: relative; /* maakt het mogelijk om de section te positioneren t.o.v. de header */
 }
 
-header img{
-  width:1em;
+header img {
+  width: 3em;
 }
 
-header svg:nth-of-type(1){
+header svg:nth-of-type(1) {
   fill: var(--textkleur);
 }
 
 /* sluit button */
-nav svg{
+nav svg {
   fill: var(--textkleur);
 
   width: 2.5em;
@@ -141,12 +161,11 @@ nav svg{
 /***************/
 /* MENU BUTTON */
 /***************/
-header > button {
-  /* JOUW CODE HIER - stap 3 */
-  order:-1;
+header > button:first-of-type {
+  order: -1;
 }
 
-header li{
+header li {
   list-style: none;
 }
 
@@ -160,120 +179,82 @@ header nav {
   bottom: 0;
   left: 0;
   right: auto; /* zorgt dat de rechterkant niet het hele scherm bedekt */
-  
+
   width: 70%; /* de gewenste breedte */
-  
-  /* stap 2 */
+
   translate: -100%;
-  
-  /* stap 4 */
+
   transition: 1s;
-  
+
   background-color: var(--wit);
 }
 
-header a{
-  color:var(--textkleur);
+header a {
+  color: var(--textkleur);
 }
 
+/* logo */
+header > a:first-of-type {
+  width: 5em;
+}
 
 /* als menu open is */
-nav.is-open{
-  /* JOUW CODE HIER - stap 4 */
-    translate:0%;
-    padding: 1em;
+nav.is-open {
+  translate: 0%;
+  padding: 1em;
 }
 
-nav li a{
+header nav li a {
   text-decoration: none;
   font-family: "AllTogetherSerif";
   color: var(--textkleur);
   font-size: 1em;
   font-weight: 700;
-  padding: 1em ;
-
+  padding: 1em;
 }
 
-  header button {
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
+header button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
-  header nav ul li a{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding:1.5em 1.5em 1.5em 0;
-    font-family: "AllTogetherSerif";
-    color: var(--textkleur);
-  }
+header nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.5em 1.5em 1.5em 0;
+  font-family: "AllTogetherSerif";
+  color: var(--textkleur);
+}
 
-  header > a:last-of-type svg{
-    fill:var(--textkleur);
-  }
+header > a:last-of-type svg {
+  fill: var(--textkleur);
+}
 
-  header > button svg{
-    fill:var(--textkleur);
-      color: #333;
+header > svg {
+  fill: var(--textkleur);
+}
+
+header > button svg {
+  fill: var(--textkleur);
+  color: #333;
   transition: color 0.2s;
-  }
-
-  
-
-/* button:hover svg, a:hover svg {
-  color: #007bff;
-} */
-
-
-/****************************************************************/
-/* styling voor de header als de browser minimaal 38em breed is */
-/****************************************************************/
-@media (min-width:60em) {
-  header > button {
-    /* JOUW CODE HIER - stap 6 */
-    display:none;    
-  }
-  
-  header nav {
-    /* JOUW CODE HIER - stap 7 */
-    position:static;
-    translate:0;
-    background:none;
-  }
-  
-  nav button {
-    /* JOUW CODE HIER - stap 6 */
-    display:none;
-    
-  }
-  
-  nav ul {
-    /* JOUW CODE HIER - stap 8 */
-    display:flex;
-    gap:1em;
-    
-  }
-  
-  nav li a {
-    /* JOUW CODE HIER - stap 9 */
-    border:none;
-    flex-direction:column;
-  }
-  
-  header > a:last-of-type {
-    /* JOUW CODE HIER - stap 9 */
-        flex-direction:column;
-
-    
-  }
 }
 
-header nav img{
-  width:3em;
+header > button {
+  color: var(--textkleur);
+  font-size: 3em;
 }
 
-nav > a{
+header div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.6em;
+}
+
+header nav div a {
   display: block;
 
   border-radius: 0.5em;
@@ -281,7 +262,6 @@ nav > a{
 
   background-color: var(--vieswit);
 
-  margin-bottom: 1em;
   padding: 1.2em;
 
   font-family: "AllTogetherSerif";
@@ -293,28 +273,46 @@ nav > a{
   transition: 0.2s;
 }
 
-
-
-nav > a:hover{
+header nav div a:hover {
   background-color: var(--textkleur);
   color: var(--wit);
 }
 
+header > ul {
+  display: flex;
+}
 
+header > ul li svg {
+  border: solid 0.15em var(--textkleur);
+  padding: 0.1em;
+  border-radius: 50%;
+}
+
+header > ul li {
+  border-radius: 50%;
+  padding: 0.5em;
+
+  width: 2.5em;
+  height: 2.5em;
+}
+
+header > ul li:hover {
+  background-color: var(--geel);
+}
 
 /****************************************************************/
-/* styling voor de header als de browser minimaal 57em breed is */
+/* styling voor de header als de browser minimaal 60em breed is */
 /****************************************************************/
-@media (min-width:57em) {
+@media (min-width: 60em) {
   header > a:first-of-type {
     width: 5em;
   }
 
-  header a{
+  header a {
     gap: 0;
   }
 
-  header nav{
+  header nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,29 +320,78 @@ nav > a:hover{
 
   header > a:last-of-type,
   nav a {
-    /* JOUW CODE HIER - stap 10 */
-    flex-direction:row;
+    flex-direction: row;
   }
 
-  nav ul{
+  header nav ul {
     gap: 0;
   }
 
-  nav ul li a{
+  header nav ul li a {
     font-size: 0.8em;
   }
 
-  nav > a{
-  border-radius: 999em;
-  padding:1em;
-  margin: 0;
+  header nav div a {
+    display: flex;
+    border-radius: 999em;
+    padding: 1em;
+    align-items: center;
+    gap: 0.8em;
+  }
+
+  header > button:first-of-type {
+    display: none;
+  }
+
+  header nav {
+    position: static;
+    translate: 0;
+    background: none;
+  }
+
+  header nav button {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  header nav li a {
+    border: none;
+    flex-direction: column;
+  }
+
+  header > a:last-of-type {
+    flex-direction: column;
+  }
+
+  header nav div a img {
+    width: 2em;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.6em;
+  }
 }
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+
+@media (min-width: 80em) {
+  header div {
+    flex-direction: row;
+  }
 }
 
 /**********/
 /* footer */
 /**********/
-
 
 /* https://cssgrid-generator.netlify.app/ */
 
@@ -356,8 +403,17 @@ footer {
   footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: auto auto auto auto auto; */
   }
+
+  /* grote foto met al die mms */
+  footer > img {
+    grid-column: 1 / -1;
+  }
+}
+
+/* grote foto met al die mms */
+footer > img {
+  max-width: 100%;
 }
 
 footer section {
@@ -369,48 +425,33 @@ footer p {
   font-size: x-small; /* em */
 }
 
-
-
-
 /* de grote foto */
-
 
 footer div {
   background-image: radial-gradient(
-      circle at center 200vw,
-      transparent calc(175vw),
-      var(--geel) 0
-    );
+    circle at center 200vw,
+    transparent calc(175vw),
+    var(--geel) 0
+  );
   background-size: 100% 100%;
   background-position: bottom center;
   /* sanne heeft me verder geholpen met de boog goed krijgen */
 
-  display:flex;
+  display: flex;
   justify-content: center;
+  padding:2em ;
 }
 
-footer div  img {
-  width:75%;
-   max-width: 50em; 
-  
+footer div img {
+  width: 75%;
+  max-width: 50em;
 }
 
 @media (min-width: 75em) {
   footer div {
     grid-area: 1 / 1 / 2 / 5;
-  } 
-
-  footer > img:nth-of-type(1) {
-    
-    /* width: 100%;              */
-          /* voorkomt dat hij gigantisch wordt */
-    /* margin: 0 auto;         */
-     /* center blijft belangrijk */
   }
 }
-
-
-
 
 @media (min-width: 75em) {
   footer section:nth-of-type(1) {
@@ -424,7 +465,8 @@ footer section:nth-of-type(1) h2 {
 }
 
 footer section:nth-of-type(1) ul {
-  display: grid;border-bottom: .1em solid var(--grijze-border);    
+  display: grid;
+  border-bottom: 0.1em solid var(--grijze-border);
 }
 
 @media (min-width: 75em) {
@@ -438,9 +480,10 @@ footer section:nth-of-type(1) ul li {
   display: grid;
   grid-template-columns: 5em 1fr;
   grid-template-rows: min-content min-content min-content;
-  /* font-size: 12px; */
+
   padding-bottom: 1em;
   padding-left: 0;
+
   width: 9em;
 }
 
@@ -453,8 +496,6 @@ footer section:nth-of-type(1) ul li {
 footer section:nth-of-type(1) ul li img {
   grid-column: 1;
   grid-row: 1/-1;
-  /* width: 10em; */
-  /* padding: 0.5em 0.5em 0 0; */
 }
 
 footer section:nth-of-type(1) ul li img {
@@ -471,8 +512,6 @@ footer section:nth-of-type(1) ul li a {
   padding: 0.7em 0 1em 0.7em;
 }
 
-
-
 footer section:nth-of-type(2) {
   display: grid;
   gap: 1em;
@@ -480,7 +519,7 @@ footer section:nth-of-type(2) {
 
 @media (min-width: 75em) {
   footer section:nth-of-type(2) {
-   grid-area: 3 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 5 / 2;
   }
 }
 
@@ -525,13 +564,11 @@ footer section:nth-of-type(2) a {
   font-weight: bold;
 }
 
-
 @media (min-width: 75em) {
   footer section:nth-of-type(3) {
-   grid-area: 3 / 2 / 4 / 3;
+    grid-area: 3 / 2 / 4 / 3;
   }
 }
-
 
 footer section:nth-of-type(n + 3):nth-of-type(-n + 5) h2 {
   font-family: "AllTogetherSerif";
@@ -564,15 +601,15 @@ footer section:nth-of-type(n + 2):nth-of-type(-n + 4) ul {
 
 @media (min-width: 75em) {
   footer section:nth-of-type(4) {
-   grid-area: 3 / 3 / 4 / 4;
+    grid-area: 3 / 3 / 4 / 4;
   }
 }
 
 @media (min-width: 75em) {
   footer section:nth-of-type(5) {
-  grid-area: 3 / 4 / 4 / 5;  }
+    grid-area: 3 / 4 / 4 / 5;
+  }
 }
-
 
 footer section:nth-of-type(5) ul {
   display: flex;
@@ -645,10 +682,9 @@ footer section:nth-of-type(6) img {
   width: 6em;
 }
 
-
 @media (min-width: 75em) {
-  footer section:nth-of-type(6) ul{
-   display: flex;
+  footer section:nth-of-type(6) ul {
+    display: flex;
   }
 }
 
@@ -657,11 +693,10 @@ footer section:nth-of-type(6) p {
 }
 
 @media (min-width: 75em) {
-
-footer section:nth-of-type(6) p {
-  width: 50em;
-  grid-area: 2 / 2 / 3 / 3;
-}
+  footer section:nth-of-type(6) p {
+    width: 50em;
+    grid-area: 2 / 2 / 3 / 3;
+  }
 }
 
 /* bron:https://www.a11yproject.com/posts/how-to-hide-content/ */
