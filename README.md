@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/tweede-pagina.JPG" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/2epagina.JPG" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -280,6 +280,10 @@ on scroll in css toegepast. nieuwe code voor mij wist niet eens dat dit kon dus 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+
+  pijltjes toevoegen met scroll 2e pagina
+
+  
 
   <img src="readme-images/niet-gelukt-1.png" width="375px" alt="hover effect">
 helaas nniet gelukt om de hover met de verschillende achtergrond tekstjes te maken
