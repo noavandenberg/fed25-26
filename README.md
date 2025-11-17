@@ -57,6 +57,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+appearance
+- text size kan je niet groter maken wel de gehele website waardoor je alsnog een groter lettertype heb 
+- geen dark mode
+- hogere contrasten hebben ze ook niet maar is niet echt nodig door dat de contrasten al goed werken en je op de site niet afhankelijk ben van kleuren maar door de tekst
+
+images
+- Alle foto’s hebben een alt attribute
+- somminge foto’s hebben dit niet nodig maar hebben het wel
+
+keyboard
+- als je shift tab doet begint hij onderaan en gaat hij naar boven
+- het werkt wel je heb wel specifieke focus alleen beetje gekke volgorde
+
+global code
+- heel veel foutmeldingen validator
+- titels zijn wel uniek en beschrijven de pagina’s, ze beginnen wel allemaal hetzelfde is dat echt nodig?
+- globale code is prima kan wel een stuk toegankelijker en veel minder divs en classes
+
 </details>
 
 
@@ -173,7 +191,8 @@ noa (ik)
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  
+
 
 </details>
 
@@ -187,8 +206,7 @@ noa (ik)
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ de header die werkte niet. ik had de code van sanne gebruikt alleen die deed het helaas helemaal niet. ik moest echt beginnen aan mijn 2e pagina die had ik nog helemaal niet.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -202,10 +220,8 @@ Julia
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - niemand was begonnen aan de 2e pagina (behalve randi) dus dat was jammer
+  - we moesten even meer door gaan en in de lessen gaan vragen
 
 </details>
 
@@ -247,8 +263,9 @@ Julia
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. chatgpt , voor smalle code die niet werkte mee te kijken wat er mis ginf
+  2. sanne , in de voortgangsgesprekken, onscroll, boogje etc.
+  3. [...](https://cssgrid-generator.netlify.app/) , alle grids die ik heb
+  4. 
 
 </details>
