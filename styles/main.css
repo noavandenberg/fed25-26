@@ -81,6 +81,7 @@ img {
   --textkleur2: #000000;
   --wit: #ffffff;
   --grijze-border: #b9c1ca;
+  --donkergrijs: #454545;
   --vieswit: #f3f6fa;
   --roze: #ffabde;
   --groen: #dbe84e;
@@ -97,12 +98,14 @@ img {
 article h2 {
   font-family: "AllTogetherSerif";
   font-weight: 300;
-  /* font-style: normal;
-  font-display: swap; */
 }
 
 p {
   font-family: "AllTogetherSerif-maarnietwaar";
+}
+
+button{
+  cursor: pointer;
 }
 
 /****************/
@@ -113,7 +116,6 @@ header section:nth-of-type(1) {
   top: -100%; /* schuif het omhoog, boven de header */
   left: 0;
   width: 100%;
-  background-color: var(--oranje);
   padding: 1em;
 }
 
@@ -389,6 +391,55 @@ header > ul li:hover {
   }
 }
 
+/********************/
+/* DARK MODE HEADER */
+/********************/
+
+@media (prefers-color-scheme: dark) {
+header{
+  background-color: var(--donkergrijs);
+}
+
+header svg:nth-of-type(1) {
+  fill: var(--wit);
+}
+
+/* sluit button */
+nav svg {
+  fill: var(--wit);
+}
+
+header nav {
+  background-color: var(--donkergrijs);
+}
+
+header nav ul li a {
+  color: var(--wit);
+}
+
+header > ul li svg {
+    border: solid 0.15em var(--wit);
+}
+
+header > button {
+  color: var(--wit);
+}
+
+header svg{
+  fill: var(--wit);
+}
+
+header svg:nth-of-type(1){
+  color: var(--wit);
+}
+
+header > a:last-of-type svg {
+  fill: var(--wit);
+}
+
+}
+
+
 /**********/
 /* footer */
 /**********/
@@ -552,6 +603,11 @@ footer section:nth-of-type(2) button {
   text-align: center;
 }
 
+footer section:nth-of-type(2) button:hover {
+  transition: .3s;
+  box-shadow: -.5em .5em var(--textkleur);
+}
+
 footer section:nth-of-type(2) p {
   font-family: "AllTogetherSerif-maarnietwaar";
   font-size: xx-small;
@@ -708,4 +764,40 @@ footer section:nth-of-type(6) p {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/********************/
+/* DARK MODE footer */
+/********************/
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    background-color: var(--donkergrijs);
+  }
+
+  footer section:nth-of-type(1) h2 {
+    color: var(--wit);
+  }
+
+  footer p{
+    color: var(--wit);
+  }
+
+  footer section:nth-of-type(2) h2 {
+    color: var(--wit);
+  }
+
+  footer section:nth-of-type(n + 3):nth-of-type(-n + 5) h2{
+    color: var(--wit);    
+  }
+
+  footer section:nth-of-type(n + 3):nth-of-type(-n + 5) a{
+    color: var(--wit);    
+  }
+
+  footer section:nth-of-type(6) a {
+    color: var(--wit);    
+
+  }
+
 }
